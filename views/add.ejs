@@ -1,0 +1,27 @@
+<%- include('partials/_header') -%>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center my-5">
+                <h1>Yeni Fotoğraf Ekle</h1>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center ">
+            <div class="col-lg-6 col-sm-4 mb-5 ">
+                <form action="/photos" method="POST" class="tm-contact-form" encType="multipart/form-data">
+                    <div class="form-outline mb-4">
+                      <input type="text" name="title" id="form1Example1" class="form-control" placeholder="Başlık "/>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input type="file" name="image" class="form-control"  />
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Yükle</button>
+                  </form>
+            </div>
+        </div>
+
+</div>
+        <%- include('partials/_footer') -%>
+
+
+
+

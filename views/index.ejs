@@ -1,0 +1,14 @@
+<%- include('partials/_header') -%>
+
+    <div class="container">
+        <div class="row">
+            <% for (let i=0; i < photos.length; i++) { %>
+                <div class="col-lg-3 col-md-4 col-sm-6 my-4 mb-lg-0">
+                    <img src="<%= photos[i].image %>" class="w-100 shadow-1-strong rounded mb-4 h-100"
+                        alt="<%= photos[i].title %>" />
+                </div>
+                <% } %>
+        </div>
+    </div>
+
+    <%- include('partials/_footer') -%>
